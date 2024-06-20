@@ -1,0 +1,15 @@
+.menu-header {
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+}
+
+.menu-navigation {
+    display: flex;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
