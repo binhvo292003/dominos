@@ -2,11 +2,19 @@
     display: flex;
     font-size: 1.25rem;
     justify-content: space-between;
-    padding: 2rem 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background-color: #004666;
 }
 
-.menu-navigation {
+.menu-navigation,
+.menu-personal {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+
 }
 
 .nav ul {

@@ -1,7 +1,16 @@
 .link {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.6);
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.link:hover {
+    background-color: #00628f;
 }
