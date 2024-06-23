@@ -63,7 +63,15 @@ export default function ImageSlider({ slides }) {
     };
 
     const dotsContainerStyles = {
+        position: 'absolute',
+        right: '50%',
+        transform: 'translateY(0%)',
+        bottom: '0px',
+        zIndex: 1,
+        cursor: 'pointer',
+
         display: 'flex',
+        alignItems: 'center',
         justifyContent: 'center',
     };
 
@@ -99,7 +107,7 @@ export default function ImageSlider({ slides }) {
 
     return (
         <>
-            <div style={sliderStyles}>
+            <div className={classes.sliderStyles} style={sliderStyles}>
                 <div
                     className={classes.leftArrowStyles}
                     style={leftArrowStyles}

@@ -1,5 +1,8 @@
 import Image from 'next/image';
-import ImageSlider from '@/components/slider/ImageSlider';
+import ImageSlider from '@/components/(home)/slider/ImageSlider';
+import classes from '@/app/page.module.css';
+import SearchBar from '@/components/(home)/seachbar/SearchBar';
+import HightlighFood from '@/components/(home)/hightlight/HightlightFood';
 
 export default function Home() {
     const slides = [
@@ -13,17 +16,16 @@ export default function Home() {
     const slideContainer = {
         width: '100%',
         height: '500px',
-        
     };
 
     return (
         <main>
-            <h1>Home Page</h1>
-
-            <div>This is home page</div>
-
-            <div style={slideContainer}>
-                <ImageSlider slides={slides} />
+            <div className={classes['container']}>
+                <div style={slideContainer}>
+                    <ImageSlider slides={slides} />
+                </div>
+                <SearchBar />
+                <HightlighFood />
             </div>
         </main>
     );
