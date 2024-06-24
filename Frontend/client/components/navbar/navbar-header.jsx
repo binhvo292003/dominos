@@ -8,7 +8,7 @@ export default function NavbarHeader() {
         <header className={classes['menu-header']}>
             <div className={classes['menu-navigation']}>
                 <div className={classes['menu-logo']}>
-                    <NavLink href="/">KFC</NavLink>
+                    <NavLink href="/" imgSrc={"/image/logo.png"}>Dominos</NavLink>
                 </div>
                 <nav className={classes['nav']}>
                     <ul>
