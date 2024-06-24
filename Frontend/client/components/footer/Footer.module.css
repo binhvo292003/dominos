@@ -1,0 +1,92 @@
+.container {
+    background-color: #00628f;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.line {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 1px;
+    width: 100%;
+    margin: 10px 0;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.content > div {
+    display: flex;
+    align-items: center;
+}
+
+.delivery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 30px;
+}
+
+.delivery .line {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 1px;
+    height: 100px;
+}
+
+.order-container > div {
+    display: flex;
+    justify-content: center;
+}
+
+.order-container .text {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.order-container .phone {
+    color: #fec108;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #bcc1cb;
+}
+
+.navigation-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.navigation a:hover {
+    color: #9199aa;
+}
+
+.certificate {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+

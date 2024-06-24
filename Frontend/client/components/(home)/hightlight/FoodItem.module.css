@@ -1,13 +1,18 @@
 .container-item {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 250px;
     height: 300px;
     border-radius: 10px;
     border: 1px solid #e0e0e0;
     background-color: rgba(255, 255, 255, 0.5);
     align-items: center;
     overflow: hidden;
+    transition: 0.3s ease-in-out
+}
+
+.container-item:hover{
+    scale: 1.02;
 }
 
 .food-img {
