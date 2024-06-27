@@ -9,6 +9,7 @@
     align-items: center;
     flex-direction: row;
     gap: 10px;
+    height: 100%;
 }
 
 .link:hover {

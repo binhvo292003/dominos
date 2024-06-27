@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery-container {
+    width: 80%;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    max-width: 600px;
+}
+
+.delivery-container input {
+    width: 80%;
+}
+
+.delivery-container input:focus {
+    outline: none;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #15618a;
+    width: 100%;
+    padding: 20px;
+}
+
+.header {
+    font-size: 30px;
+    font-weight: 400;
+}
+.delivery-container:focus-within {
+    box-shadow: 0 0 0 3px #2096d6; /* Adds a blue shadow */
+}
