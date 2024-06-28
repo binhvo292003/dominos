@@ -21,7 +21,7 @@ export default function NavbarHeader() {
                             <NavLink href="/promotion">Promotion</NavLink>
                         </li>
                         <li>
-                            <NavLink href="/service">Service</NavLink>
+                            <NavLink href="/contact">Contact</NavLink>
                         </li>
                         <li>
                             <NavLink href="/store">Store</NavLink>
