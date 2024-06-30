@@ -1,0 +1,74 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    gap: 20px;
+    
+    height: 100%;
+    max-width: 100vh;
+}
+
+.image {
+    border-radius: 50%;
+    border: 3px solid #000;
+}
+
+.edit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 20px;
+    width: 600px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.sub-title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.sub-container {
+    padding: 5px;
+}
+
+.sub-container > input {
+    width: 100%;
+    border-bottom: 2px solid #000;
+}
+
+.sub-container > div {
+    padding: 5px;
+}
+
+.sub-container > input:focus {
+    outline: none;
+}
+
+.title-1 {
+    font-size: 30px;
+    font-weight: \400;
+}
