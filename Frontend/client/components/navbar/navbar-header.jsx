@@ -2,14 +2,16 @@ import Link from 'next/link';
 
 import classes from '@/components/navbar/navbar-header.module.css';
 import NavLink from './nav-link';
+import Image from 'next/image';
 
 export default function NavbarHeader() {
     return (
         <header className={classes['menu-header']}>
             <div className={classes['menu-navigation']}>
-                <div className={classes['menu-logo']}>
-                    <NavLink href="/" imgSrc={"/image/logo.png"}>Dominos</NavLink>
-                </div>
+                <Link href="/" className={classes['menu-logo']}>
+                    <Image src={'/image/logo.png'} alt="" width={30} height={30} />
+                    Dominos
+                </Link>
                 <nav className={classes['nav']}>
                     <ul>
                         <li>
@@ -19,7 +21,7 @@ export default function NavbarHeader() {
                             <NavLink href="/promotion">Promotion</NavLink>
                         </li>
                         <li>
-                            <NavLink href="/service">Service</NavLink>
+                            <NavLink href="/contact">Contact</NavLink>
                         </li>
                         <li>
                             <NavLink href="/store">Store</NavLink>

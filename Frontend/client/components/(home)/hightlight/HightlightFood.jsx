@@ -13,6 +13,7 @@ export default function HightlighFood() {
                     <FoodItem title={'Pizza Hai San'} size={'Medium'} price={'100$'} />
                     <FoodItem title={'Pizza Hai San'} size={'Medium'} price={'100$'} />
                 </div>
+                <button className={classes['button']}>Xem thêm</button>
             </div>
         </>
     );

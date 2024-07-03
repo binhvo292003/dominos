@@ -1,0 +1,8 @@
+/* MenuList.module.css */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+}
