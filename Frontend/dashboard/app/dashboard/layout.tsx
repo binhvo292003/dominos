@@ -8,7 +8,7 @@ export default function Layout({
 }>) {
     return (
         <div className="grid grid-cols-6">
-            <div className="bg-blue-100 h-screen col-span-1">
+            <div className="bg-blue-100 col-span-1">
                 <Slidebar />
             </div>
             <div className="col-span-5">

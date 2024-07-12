@@ -1,4 +1,4 @@
-import { BiHomeAlt, BiSolidUser, BiCategory, BiSolidCoupon, BiBox, BiLogOut } from 'react-icons/bi';
+import { BiHomeAlt, BiSolidUser, BiCategory, BiSolidCoupon, BiBox, BiLogOut, BiCart } from 'react-icons/bi';
 import SlidebarContainer from './SlidebarContainer';
 import SlidebarItem from './SlidebarItem';
 
@@ -17,6 +17,7 @@ const items = [
         path: '/dashboard/categories',
     },
     { name: 'Users', icon: <BiSolidUser size={defaultIconSize} />, path: '/dashboard/users' },
+    { name: 'Orders', icon: <BiCart size={defaultIconSize} />, path: '/dashboard/orders' },
     {
         name: 'Coupouns',
         icon: <BiSolidCoupon size={defaultIconSize} />,
