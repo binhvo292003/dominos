@@ -85,7 +85,7 @@ const BarChart = () => {
     }, []);
 
     return (
-        <div className="w-full col-span-2 relative lg:h-[70vh] h-[50vh] m-auto p-4 border rounded-lg bg-white overflow-scroll">
+        <div className="w-full relative lg:h-[60vh] h-[40vh] m-auto p-4 border rounded-lg bg-white overflow-scroll">
             <Bar data={chartData} options={chartOptions} />
         </div>
     );

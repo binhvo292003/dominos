@@ -1,6 +1,19 @@
-import { BiHomeAlt, BiSolidUser, BiCategory, BiSolidCoupon, BiBox, BiLogOut, BiCart } from 'react-icons/bi';
+'use client';
+
+import {
+    BiHomeAlt,
+    BiSolidUser,
+    BiCategory,
+    BiSolidCoupon,
+    BiBox,
+    BiLogOut,
+    BiCart,
+    BiMenu,
+} from 'react-icons/bi';
 import SlidebarContainer from './SlidebarContainer';
 import SlidebarItem from './SlidebarItem';
+import { useState } from 'react';
+import { createContext } from 'vm';
 
 const defaultIconSize = '1.875rem';
 
@@ -25,12 +38,29 @@ const items = [
     },
 ];
 
+const SlidebarContext = createContext();
+
+
 const Index = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
     return (
         <>
-            <div className="p-4 flex flex-col ">
-                <div className="text-3xl font-bold flex justify-center my-7">Title</div>
-                <SlidebarContainer items={items} />
+            <div className={`block flex-col p-4 ${isMenuOpen ? 'w-72' : 'w-24'}`}>
+                <div className="flex flex-row justify-between items-center p-4">
+                    <div className={`text-3xl font-bold ${isMenuOpen ? 'block' : 'hidden'}`}>
+                        Title
+                    </div>
+                    <BiMenu
+                        className="flex p-2 items-center cursor-pointer rounded-lg  hover:bg-gray-100"
+                        size='3rem'
+                        onClick={() => {
+                            setIsMenuOpen(!isMenuOpen);
+                        }}
+                    />
+                </div>
+                <SlidebarContainer items={items} isMenuOpen={isMenuOpen} />
                 <div className="border-b border-black" />
                 <SlidebarItem
                     item={{
@@ -38,6 +68,7 @@ const Index = () => {
                         icon: <BiLogOut size={defaultIconSize} />,
                         path: '/',
                     }}
+                    isMenuOpen={isMenuOpen}
                 />
             </div>
         </>

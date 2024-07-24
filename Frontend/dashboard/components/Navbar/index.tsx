@@ -19,7 +19,7 @@ const Index = () => {
                     <BiSearch size={defaultIconSize} className="ml-2" />
                 </div>
 
-                <div className="flex flex-row items-center gap-8">
+                <div className="hidden md:flex flex-row items-center gap-8 ">
                     <MdNotifications size={defaultIconSize} className="flex items-center" />
                     <LanguageSelect/>
                     <UserItem />

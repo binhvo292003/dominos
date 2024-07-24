@@ -7,11 +7,9 @@ export default function Layout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className="grid grid-cols-6">
-            <div className="bg-blue-100 col-span-1">
-                <Slidebar />
-            </div>
-            <div className="col-span-5">
+        <div className="bg-blue-100 flex flex-row">
+            <Slidebar />
+            <div className="w-full  bg-red-100 flex flex-col  min-h-screen justify-start">
                 <Navbar />
                 {children}
             </div>
