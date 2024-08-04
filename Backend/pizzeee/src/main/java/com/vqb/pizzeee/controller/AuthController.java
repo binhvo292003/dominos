@@ -88,12 +88,12 @@ public class AuthController {
 
         Authentication authentication = authenticate(username, password);
 
-        Collection<? extends GrantedAuthority> authorities=authentication.getAuthorities();
-        String role=authorities.isEmpty()?null:authorities.iterator().next().getAuthority();
+        Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+        String role = authorities.isEmpty() ? null : authorities.iterator().next().getAuthority();
 
-        String jwt=jwtProvider.generateToken(authentication);
+        String jwt = jwtProvider.generateToken(authentication);
 
-        AuthResponse authResponse=new AuthResponse();
+        AuthResponse authResponse = new AuthResponse();
         authResponse.setJwt(jwt);
         authResponse.setMessage("Login success");
         authResponse.setRole(USER_ROLE.valueOf(role));

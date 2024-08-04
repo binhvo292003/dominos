@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class UserServiceImp implements UserService {
 
     @Autowired
-    UserRepository userRepository;
+    private UserRepository userRepository;
 
     @Autowired
     private JwtProvider jwtProvider;
