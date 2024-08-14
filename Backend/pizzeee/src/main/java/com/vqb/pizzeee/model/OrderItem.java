@@ -20,7 +20,9 @@ public class OrderItem {
     @ManyToOne
     private Food food;
 
-    private int totalPrice;
+    private Long totalPrice;
 
     private List<String> ingredients;
+
+    private int Quantity;
 }
