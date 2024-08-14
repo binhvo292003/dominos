@@ -18,6 +18,8 @@ public interface CartService {
 
     public Cart findByUserJwt(String jwt) throws Exception;
 
+    public Cart findByUserId(Long userId) throws Exception;
+
     public Cart clearCart(String jwt) throws Exception;
 
 }
